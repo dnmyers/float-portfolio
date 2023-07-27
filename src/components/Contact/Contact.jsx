@@ -1,9 +1,29 @@
-import { useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
+    const [nameInput, setNameInput] = useState('');
+    const [emailInput, setEmailInput] = useState('');
+    const [phoneInput, setPhoneInput] = useState('');
+    const [messageInput, setMessageInput] = useState('');
+
+    const handleNameInput = (e) => {
+        setNameInput(e.target.value);
+    };
+
+    const handleEmailInput = (e) => {
+        setEmailInput(e.target.value);
+    }
+
+    const handlePhoneInput = (e) => {
+        setPhoneInput(e.target.value);
+    }
+
+    const handleMessageInput = (e) => {
+        setMessageInput(e.target.value);
+    }
+
     // EmailJS
     const refForm = useRef();
 
@@ -20,7 +40,7 @@ const Contact = () => {
             .then(
                 () => {
                     alert('Message successfully sent!');
-                    window.location.reload(false);
+                    window.location.href = "https://danielnmyers.com/";
                 },
                 () => {
                     alert('Failed to send the message, please try again.');
@@ -29,13 +49,10 @@ const Contact = () => {
     }
 
     const ContactVariants = {
-        visible: {
+        show: {
             opacity: 1,
             translateY: 0,
             transition: {
-                // type: 'spring',
-                // stiffness: 70,
-                // mass: 4,
                 type: 'tween',
                 ease: 'circOut',
                 duration: 0.5
@@ -47,28 +64,18 @@ const Contact = () => {
         }
     };
 
-    const controls = useAnimation();
-    const [ref, inView] = useInView();
-
-    useEffect(() => {
-        if(inView) {
-            controls.start('visible');
-        }
-    }, [controls, inView]);
-
     return (
-        <main className="relative py-28 bg-gray-900">
+        <main className="relative pt-10 bg-gray-900">
             <motion.div
-                ref={ref}
-                animate={controls}
+                animate="show"
                 initial="hidden"
                 variants={ContactVariants} 
-                className="relative z-10 max-w-screen-xl mx-auto text-gray-600 sm:px-4 md:px-8"
+                className="relative z-10 container mx-auto pb-20 text-gray-600 sm:px-4 md:px-8"
             >
                 <div className="max-w-lg space-y-3 px-4 sm:mx-auto sm:text-center sm:px-0">
-                    <h2 className="text-cyan-400 font-semibold">
+                    <h1 className="text-cyan-400 text-2xl font-semibold">
                         Contact Me
-                    </h2>
+                    </h1>
                     <p className="text-white text-3xl font-semibold sm:text-4xl">
                         Get in touch
                     </p>
@@ -77,8 +84,7 @@ const Contact = () => {
                     </p>
                 </div>
                 <motion.div 
-                    ref={ref}
-                    animate={controls}
+                    animate="show"
                     initial="hidden"
                     variants={ContactVariants}
                     className="mt-12 mx-auto px-4 p-8 bg-blue-50 sm:max-w-lg sm:px-8 sm:rounded-xl"
@@ -96,6 +102,8 @@ const Contact = () => {
                                 type="text"
                                 name="name"
                                 placeholder="Name"
+                                onChange={handleNameInput}
+                                value={nameInput}
                                 required
                                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                             />
@@ -108,6 +116,8 @@ const Contact = () => {
                                 type="email"
                                 name="email"
                                 placeholder="Email"
+                                onChange={handleEmailInput}
+                                value={emailInput}
                                 required
                                 className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                             />
@@ -128,6 +138,8 @@ const Contact = () => {
                                     type="number"
                                     name="phone_number"
                                     placeholder="+1 (555) 000-000"
+                                    onChange={handlePhoneInput}
+                                    value={phoneInput}
                                     required
                                     className="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
                                 />
@@ -141,6 +153,8 @@ const Contact = () => {
                                 required 
                                 name="message"
                                 placeholder="Message..."
+                                onChange={handleMessageInput}
+                                value={messageInput}
                                 className="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"></textarea>
                         </div>
                         <input

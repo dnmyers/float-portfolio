@@ -1,22 +1,11 @@
 /* eslint-disable react/prop-types */
-import { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
 
 const Project = ({ project, index }) => {
     const delay = index * 0.3;
 
-    const controls = useAnimation();
-    const [ref, inView] = useInView();
-
-    useEffect(() => {
-        if(inView) {
-            controls.start('visible');
-        }
-    }, [controls, inView]);
-
     const ProjectVariants = {
-        visible: {
+        show: {
             opacity: 1,
             translateY: 0,
             transition: {
@@ -36,8 +25,7 @@ const Project = ({ project, index }) => {
 
     return (
         <motion.div
-            ref={ref}
-            animate={controls}
+            animate="show"
             initial="hidden"
             variants={ProjectVariants}
             whileHover={{ 

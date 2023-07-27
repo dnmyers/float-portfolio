@@ -36,10 +36,24 @@ const Navbar = (props) => {
     };
 
     return (
-        <nav className="bg-neutral-3 border-b w-full md:static md:text-sm md:border-none">
+        <div className="bg-neutral-3 border-b w-full ">
+        <nav className="md:container mx-auto md:static md:text-sm md:border-b-blue-400">
             <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
-                <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                    <motion.div 
+                <div className="flex items-center justify-between py-3 md:py-5 md:block z-50">
+                    <motion.div
+                        initial={{
+                            scale: 0,
+                            opacity: 0,
+                            y: -50
+                        }}
+                        animate={{
+                            scale: 1,
+                            opacity: 1,
+                            y: 0,
+                            transition: {
+                                duration: 0.3
+                            }
+                        }}
                         whileHover={{ scale: 1.2 }} 
                         whileTap={{ scale: 0.90 }}
                     >
@@ -49,6 +63,7 @@ const Navbar = (props) => {
                                 width={120}
                                 height={50}
                                 alt="DNM logo"
+                                className="z-50"
                             />
                         </Link>
                     </motion.div>
@@ -87,7 +102,7 @@ const Navbar = (props) => {
                                     custom={i}
                                     variants={linkVariants}                                   
                                 >
-                                    <NavItem link={link} showSidebar={showSidebar} />
+                                    <NavItem link={link} />
                                 </motion.li>
                             ))
                         }
@@ -95,6 +110,7 @@ const Navbar = (props) => {
                 </div>
             </div>
         </nav>
+        </div>
     );
 }
 

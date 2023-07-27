@@ -1,7 +1,4 @@
-import { useEffect } from 'react';
-import { motion, useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-
+import { motion } from 'framer-motion';
 
 import aboutMeItems from './AboutMeItems.jsx';
 
@@ -39,15 +36,6 @@ const About = () => {
         }
     };
 
-    const controls = useAnimation();
-    const [ref, inView] = useInView();
-
-    useEffect(() => {
-        if(inView) {
-            controls.start('animate');
-        }
-    }, [controls, inView]);
-
     // Animate my name
     const firstNameLetters = "Daniel".split('');
     const lastNameLetters = "Myers".split('');
@@ -66,13 +54,12 @@ const About = () => {
 
     return (
         <section className="relative py-28 bg-gray-900">
-            <div className="relative z-10 max-w-screen-xl mx-auto px-4 text-gray-300 justify-between gap-24 lg:flex md:px-8">
-                <motion.div 
-                    ref={ref}
+            <div className="container relative z-10 mx-auto px-4 text-gray-300 justify-between gap-24 lg:flex md:px-8">
+                <motion.div
                     variants={aboutMeVariants}
                     initial="initial"
-                    animate={controls}
-                    className="max-w-lg"
+                    animate="animate"
+                    className="max-w-sm"
                 >
                     <h3 className="text-white text-3xl font-semibold sm:text-4xl">
                         About Me
@@ -115,12 +102,11 @@ const About = () => {
                     <p className="mt-3">When I&apos;m not working on software projects, you can usually find me spending time with my Golden Retriever, Link, or playing video games. I believe that a healthy work-life balance is essential for staying productive and motivated, and I always strive to maintain that balance in my own life.</p>
                     <p className="mt-3">Thank you for taking the time to visit my website, and I hope that you&apos;ll find something here that interests you. If you have any questions or would like to learn more about my work, please don&apos;t hesitate to get in touch!</p>
                 </motion.div>
-                <div className="mt-12 lg:mt-0">
-                    <ul className="grid gap-6 sm:grid-cols-2">
+                <div className="lg:mt-0">
+                    <ul className="grid gap-14">
                         {
                             aboutMeItems.map((item, i) => (
                                 <motion.li
-                                    ref={ref}
                                     variants={gridItemVariants}
                                     initial="initial"
                                     animate="animate"
@@ -131,10 +117,10 @@ const About = () => {
                                         {item.icon}
                                     </div>
                                     <div>
-                                        <h4 className="text-lg text-gray-100 font-semibold">
+                                        <h4 className="text-lg text-gray-100 font-semibold ml-5 mt-2">
                                             {item.title}
                                         </h4>
-                                        <div className="mt-3 block justify-start items-start">
+                                        <div className="mt-3 ml-5 block justify-start items-start">
                                             {item.desc}
                                         </div>
                                     </div>

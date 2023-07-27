@@ -19,24 +19,12 @@ const App = () => {
     { title: "Contact", path: "/contact" },
   ];
 
-
   return (
     <>
       <Navbar navLinks={navLinks} />
       <Outlet />
       <Footer />
     </>
-
-    // <>
-    //   <AnimatePresence>
-    //       <Navbar navLinks={navLinks} />
-    //       <Hero />
-    //       <ProjectsContainer />
-    //       <About />
-    //       <Contact />
-    //   </AnimatePresence>
-    //   <Footer />
-    // </>
   );
 }
 

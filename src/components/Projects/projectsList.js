@@ -2,14 +2,14 @@ const projectsList = [
     {
         title: "Jammming",
         desc: "I created this as my capstone project for Codecademy's React skill path",
-        img: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        img: "/images/jammming.png",
         authorName: "Daniel Myers",
         href: "https://dnm-jammming.surge.sh"
     },
     {
         title: "League",
-        desc: "This is a .NET Core Web App I created for the 'Build Web Apps with ASP.NET' Codecademy Skill Path.",
-        img: "https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        desc: "This is a .NET Web App I created for the 'Build Web Apps with ASP.NET' Codecademy Skill Path.",
+        img: "/images/league.png",
         authorName: "Daniel Myers",
         href: "https://league20230716014917.azurewebsites.net"
     },
@@ -21,12 +21,19 @@ const projectsList = [
         href: "https://ingredient-matcher.surge.sh"
     },
     {
-        title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
-        desc: "The powerful gravity waves resulting from the impact of the planets' moons â€” four in total â€” were finally resolved in 2015 when gravitational microlensing was used to observe the",
-        img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        title: "Ravenous",
+        desc: "Ravenous is a restaurant recommendation website that allows users to search for local businesses based on their location and keywords.  I built this project for a React course I took from Codecademy.  It uses HTML, CSS, React, and the Yelp API.",
+        img: "/images/ravenous.png",
         authorName: "Daniel Myers",
-        href: "#"
+        href: "https://dnm-ravenous.surge.sh/"
+    },
+    {
+        title: "My Portfolio Website",
+        desc: "I created this website using React.  I used react-router-dom for the routing, framer-motion and react-intersection-observer for the animations, emailjs for the contact form, and TailwindCSS for styling.",
+        img: "/images/danielnmyers.com.png",
+        authorName: "Daniel Myers",
+        href: "https://www.danielnmyers.com"
     }
 ];
 
-export default projectsList;2
+export default projectsList;

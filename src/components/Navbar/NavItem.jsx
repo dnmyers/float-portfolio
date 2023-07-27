@@ -5,10 +5,8 @@ import { Link } from 'react-router-dom';
 const NavItem = ({ link }) => {
     const linkVariants = {
         hover: {
-            scale: 1.2,
+            scale: 1.1,
             color: 'rgb(255, 215, 0)',
-            x: 0,
-            y: 0,
             transition: {
                 duration: 0.3,
             }
