@@ -29,10 +29,10 @@ const Project = ({ project, index }) => {
             initial="hidden"
             variants={ProjectVariants}
             whileHover={{ 
-                scale: 1.1
+                scale: 1.05
             }}
             whileTap={{ 
-                scale: 0.9 
+                scale: 0.95 
             }}
             className='project max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-xl'
             key={project.title}

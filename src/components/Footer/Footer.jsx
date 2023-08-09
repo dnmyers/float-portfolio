@@ -118,7 +118,9 @@ const Footer = () => {
                             >
                                 <a 
                                     href='https://www.linkedin.com/in/danielnmyers/'
-                                    title="LinkedIn"    
+                                    title="LinkedIn" 
+                                    target="_blank"
+                                    rel="noreferrer"   
                                 >
                                     <svg viewBox='0 0 24 24' width='24' height='24'>
                                         <path
@@ -141,6 +143,8 @@ const Footer = () => {
                             >
                                 <a
                                     href='https://github.com/dnmyers'
+                                    target="_blank"
+                                    rel="noreferrer"
                                     title="Githhub"
                                 >
                                     <MarkGithubIcon size={20} />

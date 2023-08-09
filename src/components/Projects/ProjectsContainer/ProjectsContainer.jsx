@@ -24,7 +24,7 @@ const ProjectsContainer = () => {
 
     return (
         <section 
-            className='container mt-12 mx-auto px-4 py-8 max-w-screen-xl md:px-8' 
+            className='container mt-12 mx-auto px-4 py-8 max-w-screen-xl md:mt-0 md:px-8' 
             id="projects"
         >
             <motion.div
@@ -35,10 +35,15 @@ const ProjectsContainer = () => {
                 <ProjectsHeader />
             </motion.div>
             <motion.div 
-                initial={{ opacity: 0}}
-                animate={{ opacity: 1, transition: {
-                    delay: 0.5
-                }}}
+                initial={{ 
+                    opacity: 0
+                }}
+                animate={{ 
+                    opacity: 1, 
+                    transition: {
+                        delay: 0.5
+                    }
+                }}
             >
                 <Projects projectsList={projectsList} />
             </motion.div>
