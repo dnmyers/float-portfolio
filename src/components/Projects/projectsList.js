@@ -11,28 +11,33 @@ const projectsList = [
     },
     {
         title: "League",
-        desc: "This is a .NET Web App I created for the 'Build Web Apps with ASP.NET' Codecademy Skill Path.",
+        // desc: "This is a .NET Web App I created as my capstone project for the Codecademy ASP.NET Skill Path.",
+        desc: "This project showcases my expertise in web development, utilizing ASP.NET Core, Entity Framework, and LINQ to create a multi-page web app.  I created this app as my capstone project for Codecademy's ASP.NET skill path.  For this project, I built a dynamic sports league web app with intricate functionalities, including team and player data retrieval, advanced sorting, filtering, and dynamic rendering of teams and players' information.",
         img: "/images/league.png",
         authorName: "Daniel Myers",
-        href: "https://league20230716014917.azurewebsites.net"
+        href: "https://league20230716014917.azurewebsites.net",
+        github: 'https://github.com/dnmyers/League'
     },
-    {
-        title: "Ingredient Matcher",
-        desc: "This is a personal project I made to help my mother find new recipes.  It uses React, Framer Motion, Axios, HTTP Proxy Middleware, Sass, and the Edamam API.  The user enters in a list of ingredients, and the app then searches the Edamam API for recipes that use those ingredients.  The user can specify if they want recipes that use only the ingredients they have listed, or recipes that include those ingredients.",
-        img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-        authorName: "Daniel Myers",
-        href: "https://ingredient-matcher.surge.sh"
-    },
+        // {
+        //     title: "Ingredient Matcher",
+        //     desc: "This is a personal project I made to help my mother find new recipes.  It uses React, Framer Motion, Axios, HTTP Proxy Middleware, Sass, and the Edamam API.  It allows users to enter a list of ingredients that they have on-hand, and then search for recipes that use those ingredients.  The user can also specify if they want recipes that use only the ingredients they have entered, or recipes that include those and other ingredients.",
+        //     // desc: Crafted as a labor of love, this personal project stems from my desire to assist my mother in discovering exciting new recipes effortlessly. Leveraging a blend of modern technologies including React, Framer Motion, Axios, HTTP Proxy Middleware, Sass, and the robust Edamam API, the project takes culinary exploration to the next level.
+        //         // At its core, this innovative application empowers users to effortlessly curate a list of available ingredients. Armed with this list, they can embark on a journey to explore a plethora of recipes that perfectly align with their ingredients. The application grants users the flexibility to specify their preferences - whether they seek recipes exclusively tailored to their selected ingredients or those that cleverly incorporate additional elements.
+        //         // Embrace the culinary adventure, and discover a new world of recipes with ease through this personalized web experience."
+        //     img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        //     authorName: "Daniel Myers",
+        //     href: "https://ingredient-matcher.surge.sh"
+        // },
     {
         title: "Ravenous",
-        desc: "Ravenous is a restaurant recommendation w1ebsite that allows users to search for local businesses based on their location and keywords.  I built this project for a React course I took from Codecademy.  It uses HTML, CSS, React, and the Yelp API.",
+        desc: "Ravenous is a restaurant recommendation website that allows users to search for local businesses based on their location and keywords.  I built this project for a React course I took from Codecademy.  It uses HTML, CSS, React, and the Yelp API.",
         img: "/images/ravenous.png",
         authorName: "Daniel Myers",
         href: "https://ravenous.danielnmyers.com/"
     },
     {
         title: "My Portfolio Website",
-        desc: "I created this website using React.  I used react-router-dom for the routing, framer-motion xfor the animations, emailjs for the contact form, and TailwindCSS for styling.",
+        desc: "I created this website using React.  It uses react-router-dom for the routing, framer-motion for the animations, emailjs for the contact form, and TailwindCSS for styling.",
         img: "/images/danielnmyers.com.png",
         authorName: "Daniel Myers",
         href: "https://www.danielnmyers.com"

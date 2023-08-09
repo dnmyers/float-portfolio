@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import { MarkGithubIcon } from "@primer/octicons-react";
 
 const Project = ({ project, index }) => {
     const delay = index * 0.3;
@@ -9,35 +10,35 @@ const Project = ({ project, index }) => {
             opacity: 1,
             translateY: 0,
             transition: {
-                type: 'spring',
+                type: "spring",
                 stiffness: 70,
                 mass: 4,
-                ease: 'circOut',
+                ease: "circOut",
                 duration: 0.5,
-                delay: delay
-            }
+                delay: delay,
+            },
         },
         hidden: {
             opacity: 0,
-            translateY: 300
-        }
+            translateY: 300,
+        },
     };
 
     return (
         <motion.div
-            animate="show"
-            initial="hidden"
+            animate='show'
+            initial='hidden'
             variants={ProjectVariants}
-            whileHover={{ 
-                scale: 1.05
+            whileHover={{
+                scale: 1.05,
             }}
-            whileTap={{ 
-                scale: 0.95 
+            whileTap={{
+                scale: 0.95,
             }}
             className='project max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-xl'
             key={project.title}
         >
-            <a href={project.href} target="_blank" rel="noreferrer">
+            <a href={project.href} target='_blank' rel='noreferrer'>
                 <img
                     src={project.img}
                     loading='lazy'
@@ -62,13 +63,29 @@ const Project = ({ project, index }) => {
                     </div>
                 </div> */}
                 <div className='pt-3 ml-4 mr-2 mb-3'>
-                    <h3 className='text-xl text-gray-900'>
-                        {project.title}
-                    </h3>
-                    <p className='text-gray-400 text-sm mt-1'>
-                        {project.desc}
-                    </p>
+                    <h3 className='text-xl text-gray-900'>{project.title}</h3>
+                    <p className='text-gray-400 text-sm mt-1'>{project.desc}</p>
                 </div>
+                <motion.div
+                    whileHover={{
+                        scale: 1.1,
+                    }}
+                    whileTap={{
+                        scale: 0.9,
+                    }}
+                    className="flex"
+                >
+                    <a
+                        href={project.github}
+                        target='_blank'
+                        rel='noreferrer'
+                        title='Project Github Link'
+                        className="border rounded-xl p-6 ml-auto mr-auto mb-4"
+
+                    >
+                        <MarkGithubIcon size={40} /> Github
+                    </a>
+                </motion.div>
             </a>
         </motion.div>
     );
