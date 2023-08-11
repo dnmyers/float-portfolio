@@ -148,7 +148,7 @@ const Hero = () => {
                                 animate="animate"
                                 whileHover='hover'
                                 whileTap='tap'
-                                className='mt-5 px-7 py-3 w-full bg-gray-700 text-white font-medium text-center shadow-2xl hover:text-white rounded-md block sm:w-auto z-10'
+                                className='mt-5 md:mt-0 px-7 py-3 w-full bg-gray-700 text-white font-medium text-center shadow-2xl hover:text-white rounded-md block sm:w-auto z-10'
                             >
                                     About Me
                             </motion.div>
