@@ -1,7 +1,15 @@
 const projectsList = [
     {
         title: "Jammming",
-        desc: "This project served as my capstone project for Codecademy's React skill path. I successfully applied my knowledge of React components, state management, and API integration to build Jammming, a web application that allows users to search the Spotify library and create custom playlists. By completing this project, I demonstrated my proficiency in HTML, CSS, JavaScript, and React, and my ability to version control using Git and host repositories on GitHub. The project also showcases my understanding of HTTP requests and responses, as well as authentication with the Spotify API. For more details about the project, including its purpose, technologies used, features, and future work, please refer to the README document.",
+        desc: "This project served as my capstone project for Codecademy's React skill path. " +
+        "I successfully applied my knowledge of React components, state management, and API integration " +
+        "to build Jammming, a web application that allows users to search the Spotify library and create " +
+        "custom playlists. By completing this project, I demonstrated my proficiency in HTML, CSS, JavaScript, " +
+        "and React, and my ability to version control using Git and host repositories on GitHub. " +
+        "The project also showcases my understanding of HTTP requests and responses, as well as authentication " +
+        "with the Spotify API.  Click this card to see it in action or click the Github link below to view the repository.",
+        // "with the Spotify API. For more details about the project, including its purpose, technologies used, " +
+        // "features, and future work, please refer to the README document.",
         img: "/images/jammming.png",
         authorName: "Daniel Myers",
         href: "https://jammming.danielnmyers.com",
@@ -12,7 +20,12 @@ const projectsList = [
     {
         title: "League",
         // desc: "This is a .NET Web App I created as my capstone project for the Codecademy ASP.NET Skill Path.",
-        desc: "This project showcases my expertise in web development, utilizing ASP.NET Core, Entity Framework, and LINQ to create a multi-page web app.  I created this app as my capstone project for Codecademy's ASP.NET skill path.  For this project, I built a dynamic sports league web app with intricate functionalities, including team and player data retrieval, advanced sorting, filtering, and dynamic rendering of teams and players' information.",
+        desc: "This project showcases my expertise in web development, utilizing ASP.NET Core, " +
+            "Entity Framework, and LINQ to create a multi-page web app.  I created this app as my capstone " +
+            "project for Codecademy's ASP.NET skill path.  For this project, I built a dynamic sports league " +
+            "web app with intricate functionalities, including team and player data retrieval, advanced sorting, " +
+            "filtering, and dynamic rendering of teams and players' information.  Click this card to see it in action or " +
+            "click the Github link below to check out the repository.",
         img: "/images/league.png",
         authorName: "Daniel Myers",
         href: "https://league20230716014917.azurewebsites.net",
@@ -30,14 +43,19 @@ const projectsList = [
         // },
     {
         title: "Ravenous",
-        desc: "Ravenous is a restaurant recommendation website that allows users to search for local businesses based on their location and keywords.  I built this project for a React course I took from Codecademy.  It uses HTML, CSS, React, and the Yelp API.",
+        desc: "Ravenous is a restaurant recommendation website that allows users to search " +
+            "or local businesses based on their location and keywords.  I built this project " +
+            "for a React course I took from Codecademy.  It uses HTML, CSS, React, and the Yelp API." +
+            "Click this card to see it in action or  click the Github link below to check out the repository.",
         img: "/images/ravenous.png",
         authorName: "Daniel Myers",
         href: "https://ravenous.danielnmyers.com/"
     },
     {
         title: "My Portfolio Website",
-        desc: "I created this website using React.  It uses react-router-dom for the routing, framer-motion for the animations, emailjs for the contact form, and TailwindCSS for styling.",
+        desc: "I created this website using React.  It uses react-router-dom for the routing, framer-motion " +
+            "for the animations, emailjs for the contact form, and TailwindCSS for styling." +
+            "Click this card to see it in action or  click the Github link below to check out the repository.",
         img: "/images/danielnmyers.com.png",
         authorName: "Daniel Myers",
         href: "https://www.danielnmyers.com"

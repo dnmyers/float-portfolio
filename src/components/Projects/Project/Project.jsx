@@ -35,7 +35,7 @@ const Project = ({ project, index }) => {
             whileTap={{
                 scale: 0.95,
             }}
-            className='project max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-xl'
+            className='project max-w-lg mx-auto mt-4 shadow-lg border rounded-md hover:shadow-xl'
             key={project.title}
         >
             <a href={project.href} target='_blank' rel='noreferrer'>
@@ -45,47 +45,42 @@ const Project = ({ project, index }) => {
                     alt={project.title}
                     className='w-full h-52 rounded-t-md'
                 />
-                {/* <div className='flex project-center mt-2 pt-3 ml-4 mr-2'>
-                    <div className='flex-none w-10 h-10 rounded-full'>
-                        <img
-                            src={project.authorLogo}
-                            className='w-full h-full rounded-full'
-                            alt={project.authorName}
-                        />
+                <div className="flex flex-col justify-between h-[64%]">
+                    <div className='pt-3 ml-4 mr-2'>
+                        <h3 className='text-xl text-gray-900'>{project.title}</h3>
+                        <p className='text-gray-400 text-sm mt-1 h-72'>{project.desc}</p>
                     </div>
-                    <div className='ml-3'>
-                        <span className='block text-gray-900'>
-                            {project.authorName}
-                        </span>
-                        <span className='block text-gray-400 text-sm'>
-                            {project.date}
-                        </span>
-                    </div>
-                </div> */}
-                <div className='pt-3 ml-4 mr-2 mb-3'>
-                    <h3 className='text-xl text-gray-900'>{project.title}</h3>
-                    <p className='text-gray-400 text-sm mt-1'>{project.desc}</p>
-                </div>
-                <motion.div
-                    whileHover={{
-                        scale: 1.1,
-                    }}
-                    whileTap={{
-                        scale: 0.9,
-                    }}
-                    className="flex"
-                >
-                    <a
-                        href={project.github}
-                        target='_blank'
-                        rel='noreferrer'
-                        title='Project Github Link'
-                        className="border rounded-xl p-6 ml-auto mr-auto mb-4"
-
+                    {/* <motion.div
+                        whileHover={{
+                            scale: 1.1,
+                        }}
+                        whileTap={{
+                            scale: 0.9,
+                        }}
+                        className="flex items-center justify-center"
+                    > */}
+                    <motion.div
+                        whileHover={{
+                            scale: 1.1
+                        }}
+                        whileTap={{
+                            scale: 0.95
+                        }}
+                        className="flex items-center justify-center mb-14"
                     >
-                        <MarkGithubIcon size={40} /> Github
-                    </a>
-                </motion.div>
+                        <a
+                            href={project.github}
+                            target='_blank'
+                            rel='noreferrer'
+                            title='Project Github Link'
+                            className="border rounded-xl p-3"
+
+                        >
+                            <MarkGithubIcon size={24} /> Github
+                        </a>
+                    </motion.div>
+                    {/* </motion.div> */}
+                </div>
             </a>
         </motion.div>
     );

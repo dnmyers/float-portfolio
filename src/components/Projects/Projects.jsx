@@ -15,7 +15,7 @@ const ProjectsVariants = {
     }
 };
 
-const Projects = ({ projectsList }) => {  
+const Projects = ({ projectsList }) => {
     return (
         <motion.div
             variants={ProjectsVariants}
