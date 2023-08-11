@@ -1,3 +1,5 @@
+import { CodeIcon } from "@primer/octicons-react";
+
 const experienceList = (
     <ul>
         <li>
@@ -56,7 +58,10 @@ const AboutMeItems = [
 
     {
         icon: (
-            <img width="64" height="64" src="https://img.icons8.com/cotton/64/code.png" alt="code"/>
+            <div className="font-bold">
+                <CodeIcon size={24} />
+            </div>
+            // <img width="64" height="64" src="https://img.icons8.com/cotton/64/code.png" alt="code"/>
             // <svg
             //     xmlns='http://www.w3.org/2000/svg'
             //     // viewBox='3.5 3.5 16 16'
