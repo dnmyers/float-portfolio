@@ -65,7 +65,7 @@ const Project = ({ project, index }) => {
                     target='_blank'
                     rel='noreferrer'
                     title='Project Github Link'
-                    className="border rounded-b-3xl p-3 w-full h-full bg-blue-2 hover:bg-blue-1"
+                    className="border rounded-b-3xl p-3 w-full h-full bg-blue-2 hover:bg-blue-1 hover:underline"
 
                 >
                     <MarkGithubIcon size={24} /> Github

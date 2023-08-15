@@ -54,6 +54,7 @@ const Project = ({ project, index }) => {
             </a>
             <motion.div
                 whileHover={{
+                    backgroundColor: '#00D0FB'
                 }}
                 whileTap={{
                     scale: 0.95

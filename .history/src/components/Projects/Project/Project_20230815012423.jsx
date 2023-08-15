@@ -35,7 +35,7 @@ const Project = ({ project, index }) => {
             whileTap={{
                 scale: 0.95,
             }}
-            className='project max-w-lg mx-auto mt-4 shadow-lg border rounded-3xl hover:shadow-xl'
+            className='project max-w-lg mx-auto mt-4 shadow-lg border rounded-md hover:shadow-xl'
             key={project.title}
         >
             <a href={project.href} target='_blank' rel='noreferrer'>
@@ -43,34 +43,35 @@ const Project = ({ project, index }) => {
                     src={project.img}
                     loading='lazy'
                     alt={project.title}
-                    className='w-full h-52 rounded-t-3xl'
+                    className='w-full h-52 rounded-t-md'
                 />
                 <div className="flex flex-col justify-between">
                     <div className='pt-2 ml-4 mr-4'>
                         <h3 className='text-xl text-gray-900'>{project.title}</h3>
-                        <p className='text-gray-400 text-sm mt-1 h-56'>{project.desc}</p>
+                        <p className='text-gray-400 text-sm mt-1 h-72'>{project.desc}</p>
                     </div>
+                    <motion.div
+                        whileHover={{
+                            scale: 1.1
+                        }}
+                        whileTap={{
+                            scale: 0.95
+                        }}
+                        className="flex items-center justify-center mb-6 w-full"
+                    >
+                        <a
+                            href={project.github}
+                            target='_blank'
+                            rel='noreferrer'
+                            title='Project Github Link'
+                            className="border rounded-xl p-3 w-full h-full"
+
+                        >
+                            <MarkGithubIcon size={24} /> Github
+                        </a>
+                    </motion.div>
                 </div>
             </a>
-            <motion.div
-                whileHover={{
-                }}
-                whileTap={{
-                    scale: 0.95
-                }}
-                className="flex items-center justify-center text-center w-full rounded-b-3xl"
-            >
-                <a
-                    href={project.github}
-                    target='_blank'
-                    rel='noreferrer'
-                    title='Project Github Link'
-                    className="border rounded-b-3xl p-3 w-full h-full bg-blue-2 hover:bg-blue-1"
-
-                >
-                    <MarkGithubIcon size={24} /> Github
-                </a>
-            </motion.div>
         </motion.div>
     );
 };

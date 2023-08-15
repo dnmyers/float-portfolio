@@ -54,6 +54,7 @@ const Project = ({ project, index }) => {
             </a>
             <motion.div
                 whileHover={{
+                    fontDecoration: "underline"
                 }}
                 whileTap={{
                     scale: 0.95

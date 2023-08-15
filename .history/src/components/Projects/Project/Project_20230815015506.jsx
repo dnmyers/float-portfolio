@@ -54,18 +54,19 @@ const Project = ({ project, index }) => {
             </a>
             <motion.div
                 whileHover={{
+                    scale: 1.1
                 }}
                 whileTap={{
                     scale: 0.95
                 }}
-                className="flex items-center justify-center text-center w-full rounded-b-3xl"
+                className="flex items-center justify-center text-center w-full"
             >
                 <a
                     href={project.github}
                     target='_blank'
                     rel='noreferrer'
                     title='Project Github Link'
-                    className="border rounded-b-3xl p-3 w-full h-full bg-blue-2 hover:bg-blue-1"
+                    className="border rounded-b-3xl p-3 w-full h-full bg-blue-2"
 
                 >
                     <MarkGithubIcon size={24} /> Github

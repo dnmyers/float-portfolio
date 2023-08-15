@@ -42,9 +42,8 @@ const projectsList = [
     {
         title: "Ravenous",
         desc: "Ravenous is a restaurant recommendation website that allows users to search " +
-            "for local businesses based on the location and keywords entered.  I built this project " +
-            "for a React course I took from Codecademy.  It uses HTML, CSS, JavaScript, React, and the Yelp API. " +
-            "Users are able to search by restaurant name or cuisine type, and sort by Best Match, Highest Rated, or Most Reviewed. " +
+            "or local businesses based on their location and keywords.  I built this project " +
+            "for a React course I took from Codecademy.  It uses HTML, CSS, React, and the Yelp API." +
             "Click this card to see it in action or  click the Github link below to check out the repository.",
         img: "/images/ravenous.png",
         authorName: "Daniel Myers",
@@ -53,9 +52,9 @@ const projectsList = [
     },
     {
         title: "My Portfolio Website",
-        desc: "I built this website with React to demonstrate some of my projects and web development skills.  It uses React Router for the routing, Framer Motion " +
-            "for the animations, EmailJS for the contact form, and Tailwind CSS for styling." +
-            "You can click this card to go back to the homepage, or click on the GitHub link below to check out it's repository.",
+        desc: "I created this website using React.  It uses react-router-dom for the routing, framer-motion " +
+            "for the animations, emailjs for the contact form, and TailwindCSS for styling." +
+            "Click this card to see it in action or  click the Github link below to check out the repository.",
         img: "/images/danielnmyers.com.png",
         authorName: "Daniel Myers",
         href: "https://www.danielnmyers.com",

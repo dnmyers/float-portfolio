@@ -35,7 +35,7 @@ const Project = ({ project, index }) => {
             whileTap={{
                 scale: 0.95,
             }}
-            className='project max-w-lg mx-auto mt-4 shadow-lg border rounded-3xl hover:shadow-xl'
+            className='project max-w-lg mx-auto mt-4 shadow-lg border rounded-t-full hover:shadow-xl'
             key={project.title}
         >
             <a href={project.href} target='_blank' rel='noreferrer'>
@@ -43,7 +43,7 @@ const Project = ({ project, index }) => {
                     src={project.img}
                     loading='lazy'
                     alt={project.title}
-                    className='w-full h-52 rounded-t-3xl'
+                    className='w-full h-52 rounded-t-md'
                 />
                 <div className="flex flex-col justify-between">
                     <div className='pt-2 ml-4 mr-4'>
@@ -54,18 +54,19 @@ const Project = ({ project, index }) => {
             </a>
             <motion.div
                 whileHover={{
+                    scale: 1.1
                 }}
                 whileTap={{
                     scale: 0.95
                 }}
-                className="flex items-center justify-center text-center w-full rounded-b-3xl"
+                className="flex items-center justify-center text-center w-full"
             >
                 <a
                     href={project.github}
                     target='_blank'
                     rel='noreferrer'
                     title='Project Github Link'
-                    className="border rounded-b-3xl p-3 w-full h-full bg-blue-2 hover:bg-blue-1"
+                    className="border rounded-b-full p-3 w-full h-full bg-blue-2"
 
                 >
                     <MarkGithubIcon size={24} /> Github
