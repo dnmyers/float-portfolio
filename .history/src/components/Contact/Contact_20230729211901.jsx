@@ -15,34 +15,34 @@ const Contact = () => {
     };
     // End of Name
 
-
+    
     // Phone
     const handlePhoneInput = ({ target }) => {
         const phoneNumber = target.value;
-
+        
         if (phoneNumber.length <= 15) {
             setPhoneInput(target.value);
         }
     };
     // End of Phone
-
+    
     // Message
     const handleMessageInput = (e) => {
         setMessageInput(e.target.value);
     };
     // End of Message
-
+    
     // Email
     const handleEmailInput = ({ target }) => {
         setEmailInput(target.value);
     };
-
+    
     // EmailJS
     const refForm = useRef();
-
+    
     const sendEmail = (e) => {
         e.preventDefault();
-
+        
         emailjs
         .sendForm(
             "gmail",
@@ -62,7 +62,7 @@ const Contact = () => {
     };
     // End of EmailJS
     // End of Email
-
+    
     // Framer Motion
     const ContactVariants = {
         show: {
@@ -98,7 +98,7 @@ const Contact = () => {
                     </p>
                     <p className='text-gray-300'>
                         I&apos;d love to hear from you! Please fill out the form
-                        below or email me at <a href="mailto:daniel.neil.myers@gmail.com" className="text-blue-1">daniel.neil.myers@gmail.com</a>.
+                        below.
                     </p>
                 </div>
                 <motion.div
@@ -177,7 +177,7 @@ const Contact = () => {
                             type='submit'
                             value='Submit'
                             initial={{
-                                scale: 0,
+                                scale: 0, 
                                 opacity: 0
                             }}
                             animate={{

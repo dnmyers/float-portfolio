@@ -57,15 +57,8 @@ const projectsList = [
     {
         title: "Inspirational Homepage",
         desc: "Inspirational Homepage is a project I completed for an Advance React and Redux course I took from Codecademy.  It uses React, " +
-            "Redux Toolkit, SCSS, Framer-Motion, Axios, and some other libraries to display " +
-            "a homepage with the weather information for the user's current location from the OpenWeatherMap API, background images from the Unsplash API that the user can cycle through " +
-            "with the right and left arrows on either side of the page, an inspirational quote on the bottom of the page from the Quotable API, and the ability to add tasks or notes in the " +
-            "middle of the page.",
-        img: "/images/inspirational-homepage.png",
-        authorName: "Daniel N. Myers",
-        href: "https://inspirational-homepage.danielnmyers.com",
-        github: "https://github.com/dnmyers/inspirational-homepage-v2.0",
-        category: ["React", "Redux", "Framer Motion", "Sass", "OpenWeatherMap API", "Unsplash API", "Quotable API", "HTML", "JavaScript", "Git", "GitHub"],
+            "Redux Toolkit, SCSS, Framer-Motion, Axios, OpenWeather "
+
     },
     {
         title: "League",

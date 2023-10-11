@@ -1,7 +1,7 @@
 const ProjectsHeader = () => {
 
   return (
-        <div className="text-center max-w-xl mx-auto">
+        <div className="text-center max-w-xl">
             <h1 className="text-3xl text-gray-800 font-bold sm:text-4xl">
                 Projects
             </h1>

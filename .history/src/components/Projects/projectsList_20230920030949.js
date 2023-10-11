@@ -66,6 +66,7 @@ const projectsList = [
         href: "https://inspirational-homepage.danielnmyers.com",
         github: "https://github.com/dnmyers/inspirational-homepage-v2.0",
         category: ["React", "Redux", "Framer Motion", "Sass", "OpenWeatherMap API", "Unsplash API", "Quotable API", "HTML", "JavaScript", "Git", "GitHub"],
+
     },
     {
         title: "League",

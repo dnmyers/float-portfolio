@@ -31,6 +31,7 @@ const ProjectsContainer = () => {
                 variants={HeaderVariants}
                 initial="hidden"
                 animate="show"
+                className="text-center mx-auto"
             >
                 <ProjectsHeader />
             </motion.div>

@@ -24,7 +24,7 @@ const ProjectsContainer = () => {
 
     return (
         <section
-            className="container mt-12 mx-auto px-4 py-8 max-w-screen-xl md:mt-0 md:px-8 text-center"
+            className="container mt-12 mx-auto px-4 py-8 max-w-screen-xl md:mt-0 md:px-8"
             id="projects"
         >
             <motion.div

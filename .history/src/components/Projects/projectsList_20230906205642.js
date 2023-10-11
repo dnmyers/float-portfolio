@@ -13,7 +13,6 @@ const projectsList = [
         authorName: "Daniel Myers",
         href: "https://jammming.danielnmyers.com",
         github: "https://github.com/dnmyers/jammming-new",
-        category: ["React", "HTML", "CSS", "JavaScript", "Spotify API", "Git", "GitHub"],
         // desc: "In this project, I built a React web application called Jammming. Using React components, state management, and requests with the Spotify API, I created a website that allows users to search the Spotify library and create custom playlists. Users can search for songs by title, artist, genre, and more. The application displays information about each song, including title, artist, and album. Once users have created their custom playlist, they can save it directly to their personal Spotify account. The                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              project utilizes HTML, CSS, JavaScript, and React, and integrates with the Spotify API for data retrieval and authentication. The application is deployed and the repository is hosted on GitHub. For more details about the project, including its purpose, technologies used, features, and future work, please refer to the README document."
         // href: "https://dnm-jammming.surge.sh"
     },
@@ -40,7 +39,6 @@ const projectsList = [
         authorName: "Daniel Myers",
         href: "https://ravenous.danielnmyers.com/",
         github: "https://github.com/dnmyers/ravenous-updated/tree/main",
-        category: ["React", "HTML", "CSS", "JavaScript", "Yelp API", "Git", "GitHub"],
     },
     {
         title: "My Portfolio Website",
@@ -52,20 +50,6 @@ const projectsList = [
         authorName: "Daniel Myers",
         href: "https://www.danielnmyers.com",
         github: "https://github.com/dnmyers/portfolio",
-        category: ["React", "Tailwind CSS", "Framer Motion", "React Router", "EmailJS","HTML", "CSS", "JavaScript",  "Git", "GitHub"],
-    },
-    {
-        title: "Inspirational Homepage",
-        desc: "Inspirational Homepage is a project I completed for an Advance React and Redux course I took from Codecademy.  It uses React, " +
-            "Redux Toolkit, SCSS, Framer-Motion, Axios, and some other libraries to display " +
-            "a homepage with the weather information for the user's current location from the OpenWeatherMap API, background images from the Unsplash API that the user can cycle through " +
-            "with the right and left arrows on either side of the page, an inspirational quote on the bottom of the page from the Quotable API, and the ability to add tasks or notes in the " +
-            "middle of the page.",
-        img: "/images/inspirational-homepage.png",
-        authorName: "Daniel N. Myers",
-        href: "https://inspirational-homepage.danielnmyers.com",
-        github: "https://github.com/dnmyers/inspirational-homepage-v2.0",
-        category: ["React", "Redux", "Framer Motion", "Sass", "OpenWeatherMap API", "Unsplash API", "Quotable API", "HTML", "JavaScript", "Git", "GitHub"],
     },
     {
         title: "League",
@@ -81,7 +65,6 @@ const projectsList = [
         authorName: "Daniel Myers",
         href: "https://league20230716014917.azurewebsites.net",
         github: "https://github.com/dnmyers/League",
-        category: [".NET", "ASP.NET", "Entity Framework", "LINQ", "Razor Pages", "C#.NET", "HTML", "CSS", "JavaScript", "Bootstrap", "Git", "GitHub"],
     },
 ];
 

@@ -31,12 +31,11 @@ const skills = (
         <li>CSS/SCSS</li>
         <li>JavaScript</li>
         <li>React</li>
-        <li>.NET</li>
         <li>ASP.NET</li>
         <li>Razor Pages</li>
         <li>C#.NET</li>
         <li>VB.NET</li>
-        <li>SQL/T-SQL</li>
+        <li>T-SQL</li>
     </ul>
 );
 
